@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1.0" />
+        <title>Project Marketplace</title>
+        <link rel="stylesheet" href="login.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://kit.fontawesome.com/b7bc899bd6.js"
+         crossorigin="anonymous"></script>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <!-- NAVBAR -->
+    <body>
+        <nav class="navbar">
+        <div class="navbar__container">
+          <a href="/" id="navbar__logo"><i class="fas fa-user-astronaut"></i></i>
+            Project Marketplace</a>
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="index.html" class="navbar__links">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="products.html" class="navbar__links">Products</a>
+            </li>
+            <li class="navbar__item">
+              <a href="/" class="navbar__links">About</a>
+            </li>
+            <li class="navbar__btn"><a href="/" class="button">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+      <!-- LOGIN -->
+      <form>
+        <div class="imgcontainer">
+          <img src="images/pic2.png" alt="login illustration" class="illustration">
+        </div>
+      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" id="uname" name="uname" required>
+          <div id="userError" class="error"></div>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+          <div id="pswError" class="error"></div>
+      
+          <button type="button" onclick="validate()">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot Password?</span>
+        </div>
+      </form>
+      <script src="app.js"></script>
+      </body>
+      </html>
+    
